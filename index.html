@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            list-style-type: none;
+            text-decoration: none;
+            font-family: 'Baloo 2';
+        }
+
+            
+        .nav-btn_header {
+            display: inline-block;
+            color: white;
+            background-color: rgb(72, 72, 178);
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 22px;
+            font-weight: 500;
+            margin: -3px 0px;
+            border: none;
+            transition: 0.3s ease;
+        }
+
+        .nav-item {
+            margin: 0px 5px;
+        }
+
+        .navbar {
+            padding: 30px 0px;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: rgba(0, 0, 0, 0.717);
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.2s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: rgb(227, 249, 35);
+        }
+
+        .heading_logo {
+            font-size: 25px;
+            font-weight: 800;
+            color: #1659bd;
+        }
+
+        .nav-btn_header:hover {
+            background-color: rgb(45, 45, 151);
+        }
+
+        .heading_homesection {
+            font-size: 34px;
+            line-height: 45px;
+
+        }
+
+        .hero_section {
+            width: 100%;
+            height: auto;
+        }
+
+        .header {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .content_home_section {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
+        .title_span {
+            width: 190px;
+            background-color: rgb(151, 170, 237);
+            color: black;
+            text-align: center;
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .heading_homesection {
+
+            font-size: 53px;
+            font-weight: 900;
+            line-height: 65px;
+            margin: 12px 0px;
+        }
+
+        .heading_span {
+            color: rgb(183, 49, 49);
+        }
+
+        .para_home_section {
+            color: black;
+            font-weight: 400;
+            line-height: 27px;
+        }
+
+        .btn_home {
+            background-color: rgb(235, 96, 96);
+            color: white;
+            text-decoration: none;
+            padding: 11px 20px;
+            border-radius: 30px;
+            font-size: 16px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn_home:hover {
+            background-color: transparent;
+            color: rgb(235, 96, 96);
+            border: 1px solid rgb(235, 96, 96);
+        }
+
+        .button_home {
+            margin: 22px 0px;
+
+        }
+
+        .btn_home_contact {
+            background-color: transparent;
+            color: rgb(235, 96, 96);
+            border: 2px solid rgb(235, 96, 96);
+            margin-left: 11px;
+        }
+
+        .img_banner {
+            width: 100%;
+
+        }
+
+        .img_about {
+            width: 100%;
+            height: 400px;
+            border-radius: 0px;
+        }
+
+        .baloo-2 {
+            font-family: "Baloo 2", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: auto;
+            font-style: normal;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700;800&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,500&display=swap"
+        rel="stylesheet">
+    <title>Responsive Web Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg p-2 ">
+                <div class="container-fluid">
+                    <a class="navbar-brand me-2 p-" href="#">
+                        <h3 class="heading_logo">Logo.</h3>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto p-4">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <button class="nav-btn_header" type="submit">Get Started</button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class=" hero_section">
+                    <div class="row">
+                        <div class="col-lg-6 mt-5">
+                            <div class="content_home_section">
+                                <button class="title_span">WELCOME TO OUR SITE</button>
+                                <h2 class="heading_homesection"><span class="heading_span">We Are Digital</span><br>
+                                    Agency With Digital
+                                    Solutions
+                                </h2>
+                                <p class="para_home_section">Lorem ipsum amet consectetur adipisicing elit. Quos ex
+                                    placeat nesciunt soluta
+                                    recusandae culpa vero
+                                    pariatur excepturi provident odit.</p>
+                                <div class="button_home">
+                                    <a href="#" class="btn_home">Start A Project</a>
+                                    <a href="#" class="btn_home btn_home_contact">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-5 img_banner_container">
+                                <img src="img/img.png" class="img-fluid img_banner" alt="banner img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
