@@ -12,7 +12,7 @@
             font-family: 'Baloo 2';
         }
 
-            
+
         .nav-btn_header {
             display: inline-block;
             color: white;
@@ -151,16 +151,33 @@
             font-weight: auto;
             font-style: normal;
         }
-        .img_about{
-            background-image: url(img/aboutimg.jpg);
+
+        .about {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+
         }
-        </style>
+
+        .img_about {
+            width: 100%;
+            height: 500px;
+            background-image: url(img/aboutimg.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 50% 50% 0% 50%;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700;800&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,500&display=swap"
         rel="stylesheet">
     <title>Responsive Web Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -213,46 +230,90 @@
             </nav>
 
             <div class=" hero_section">
-                    <div class="row">
-                        <div class="col-lg-6 mt-5">
-                            <div class="content_home_section">
-                                <button class="title_span">WELCOME TO OUR SITE</button>
-                                <h2 class="heading_homesection"><span class="heading_span">We Are Digital</span><br>
-                                    Agency With Digital
-                                    Solutions
-                                </h2>
-                                <p class="para_home_section">Lorem ipsum amet consectetur adipisicing elit. Quos ex
-                                    placeat nesciunt soluta
-                                    recusandae culpa vero
-                                    pariatur excepturi provident odit.</p>
-                                <div class="button_home">
-                                    <a href="#" class="btn_home">Start A Project</a>
-                                    <a href="#" class="btn_home btn_home_contact">Contact Us</a>
-                                </div>
+                <div class="row">
+                    <div class="col-lg-6 mt-5">
+                        <div class="content_home_section">
+                            <button class="title_span">WELCOME TO OUR SITE</button>
+                            <h2 class="heading_homesection"><span class="heading_span">We Are Digital</span><br>
+                                Agency With Digital
+                                Solutions
+                            </h2>
+                            <p class="para_home_section">Lorem ipsum amet consectetur adipisicing elit. Quos ex
+                                placeat nesciunt soluta
+                                recusandae culpa vero
+                                pariatur excepturi provident odit.</p>
+                            <div class="button_home">
+                                <a href="#" class="btn_home">Start A Project</a>
+                                <a href="#" class="btn_home btn_home_contact">Contact Us</a>
                             </div>
                         </div>
-                        <div class="col-lg-6 mt-5 img_banner_container">
-                                <img src="img/img.png" class="img-fluid img_banner" alt="banner img">
-                            </div>
-                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-5 img_banner_container">
+                        <img src="img/img.png" class="img-fluid img_banner" alt="banner img">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    </div>
     <!--About section-->
-<section class="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="img_container_about">
-                    <div class="img_about"></div>
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="img_container_about">
+                        <div class="img_about"></div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="content_about">
+                        <span class="title_span">About Us</span>
+                        <h3 class="heading_about_content">Why our agency?</h3>
+                        <p class="para_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. A ad sed
+                            voluptates quis eligendi
+                            saepe laboriosam hic aspernatur voluptatibus autem nemo culpa ipsum, sunt impedit architecto
+                            molestias iste ullam explicabo ducimus id? Ipsam natus, suscipit laboriosam accusantium
+                            itaque eum recusandae!</p>
+                        <div class="detail_about">
+                            <ul>
+                                <li class="list_about">
+                                    <span class="icon_about">
+                                        <i class="fa-solid fa-check-double">
+                                        </i>
+
+                                    </span>
+                                    <p class="pra_detalis">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Harum ullam vero
+                                        laborum placeat animi.</p>
+                                </li>
+                                <li class="list_about">
+                                    <span class="icon_about">
+                                        <i class="fa-solid fa-check-double">
+                                        </i>
+
+                                    </span>
+                                    <p class="pra_detalis">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Harum ullam vero
+                                        laborum placeat animi.</p>
+                                </li>
+                                <li class="list_about">
+                                    <span class="icon_about">
+                                        <i class="fa-solid fa-check-double">
+                                        </i>
+
+                                    </span>
+                                    <p class="pra_detalis">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Harum ullam vero
+                                        laborum placeat animi.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-6">B</div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
