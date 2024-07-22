@@ -157,7 +157,7 @@
             height: 90vh;
             display: flex;
             align-items: center;
-
+            margin-top: 80px;
         }
 
         .img_about {
@@ -167,6 +167,62 @@
             background-position: center;
             background-size: cover;
             border-radius: 50% 50% 0% 50%;
+        }
+
+        .content_about {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .heading_about_content {
+            font-size: 42px;
+            font-weight: 700;
+            margin: 16px 0px;
+        }
+
+        .para_content {
+            font-size: 15px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.71);
+            line-height: 24px;
+        }
+
+        .list_about {
+            display: flex;
+            margin: 16px 0px;
+        }
+
+        .icon_about {
+            color: orange;
+            padding: 0px 5px;
+            font-size: 14px;
+        }
+
+        .pra_details {
+            margin: 0px 6px;
+        }
+
+        .btn_about_content {
+            display: block;
+            text-decoration: none;
+            width: 150px;
+            background-color: rgb(59, 59, 223);
+            font-size: 16px;
+            font-weight: 500;
+            padding: 11px 15px;
+            border-radius: 3px;
+            text-align: center;
+            color: white;
+            margin: 10px 5px;
+            transition: 0.3s ease-in;
+        }
+
+        .btn_about_content:hover {
+            background-color: rgb(2, 2, 118);
+
         }
     </style>
     <meta charset="UTF-8">
@@ -187,7 +243,7 @@
         <div class="row">
             <nav class="navbar navbar-expand-lg p-2 ">
                 <div class="container-fluid">
-                    <a class="navbar-brand me-2 p-" href="#">
+                    <a class="navbar-brand me-2 " href="#">
                         <h3 class="heading_logo">Logo.</h3>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -261,12 +317,12 @@
     <section class="about">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
                     <div class="img_container_about">
                         <div class="img_about"></div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                     <div class="content_about">
                         <span class="title_span">About Us</span>
                         <h3 class="heading_about_content">Why our agency?</h3>
@@ -275,7 +331,7 @@
                             saepe laboriosam hic aspernatur voluptatibus autem nemo culpa ipsum, sunt impedit architecto
                             molestias iste ullam explicabo ducimus id? Ipsam natus, suscipit laboriosam accusantium
                             itaque eum recusandae!</p>
-                        <div class="detail_about">
+                        <div class="details_about">
                             <ul>
                                 <li class="list_about">
                                     <span class="icon_about">
@@ -308,6 +364,9 @@
                                         laborum placeat animi.</p>
                                 </li>
                             </ul>
+                            <div>
+                                <a href="#" class="btn_about_content">learn more</a>
+                            </div>
                         </div>
                     </div>
                 </div>
