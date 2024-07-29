@@ -223,6 +223,88 @@
 
         }
 
+        .Service {
+            width: 100%;
+            height: 90vh;
+            margin: 80px 0px;
+        }
+
+        .title_heading_service {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .heading_service {
+            font-size: 42px;
+            font-weight: 800;
+            margin: 15px 0px;
+            letter-spacing: 1px;
+            color: #0a0a3a;
+        }
+
+        .para_heading_service {
+            max-width: 620px;
+            font-size: 15px;
+            line-height: 24px;
+            color: #4a4a4a;
+            text-align: center;
+        }
+
+        .content_box_service {
+            height: 300px;
+            width: 100%;
+            background-color: white;
+            box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.21),
+                -1px -1px 5px rgba(128, 128, 128, 0.21);
+
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .icon_container {
+            height: 100px;
+            width: 100px;
+            border-radius: 120px;
+            background-color: #ce5ac4;
+            display: flex;
+            margin: 12px 0px;
+            box-shadow: 0px 3px 0px #808080;
+            transition: 0.3s ease-in-out;
+        }
+
+        .icon_container:hover {
+            background-color: #5757f4;
+            box-shadow: 0px 3px 0px #2626c0;
+        }
+
+        #icon_service {
+            color: white;
+            font-size: 42px !important;
+            font-weight: 600;
+        }
+
+        .heading_content_service {
+            color: #4365c5;
+            font-weight: 800;
+            font-size: 21px;
+            margin: 12px 0px;
+            font-family: "poppins", sans-serif;
+        }
+
+        .para_content_service {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #353535;
+        }
+        .a_margin{
+            margin-top: 73px !important;
+        }
+
+        .a_tbdr {
+            border: black dashed 1px;
+        }
+
         @media (max-width:1330px) {
 
             .header,
@@ -487,10 +569,63 @@
     <!------------------service section--------------->
     <section class="Service">
         <div class="container">
-            <div class="heading_service">
-            <span class="service_span">Service / Features</span>
-            <h3 >Our Features</h3>
-        </div>
+            <div class="title_heading_service align-items-center">
+                <span class="title_span">Service / Features</span>
+                <h3 class="heading_service ">Our Features</h3>
+                <p class="para_heading_service">
+                    Lorem ipsum doloibus nobis inventore vero! Animi repellat ad, ipsam fugiat temporibus enim! Vitae
+                    adipisci consectetur fugit quas quis alias possimus ipsa.</p>
+            </div>
+            <div class="row a_margin">
+                <!--------card 1------->
+                <div class="justify-content-center col-lg-3 col-md-6 col-12">
+                    <div class="content_box_service d-flex justify-content-center p-2 align-items-center">
+                        <div class="icon_container justify-content-center align-items-center text-white">
+                            <i class="fa-solid fa-file-contract" id="icon_service"></i>
+                        </div>
+                        <h4 class="heading_content_service">Graphics Design</h4>
+                        <p class="para_content_service text-center">Lorem ipsum dolor sit amet adipisicing elit. Fuga
+                            cumque nostrum
+                            autem aspernatur hic pariatur.</p>
+                    </div>
+                </div>
+                <!--------card 2------->
+                <div class="justify-content-center col-lg-3 col-md-6 col-12">
+                    <div class="content_box_service d-flex justify-content-center p-2 align-items-center">
+                        <div class="icon_container justify-content-center align-items-center text-white">
+                            <i class="fa-solid fa-envelope-open-text" id="icon_service"></i>
+                        </div>
+                        <h4 class="heading_content_service">Email Marketing</h4>
+                        <p class="para_content_service text-center">Lorem ipsum dolor sit amet adipisicing elit. Fuga
+                            cumque nostrum
+                            autem aspernatur hic pariatur.</p>
+                    </div>
+                </div>
+                <!--------card 3------->
+                <div class="justify-content-center col-lg-3 col-md-6 col-12">
+                    <div class="content_box_service d-flex justify-content-center p-2 align-items-center">
+                        <div class="icon_container justify-content-center align-items-center text-white">
+                            <i class="fa-solid fa-envelope-open-text" id="icon_service"></i>
+                        </div>
+                        <h4 class="heading_content_service">Application Design</h4>
+                        <p class="para_content_service text-center">Lorem ipsum dolor sit amet adipisicing elit. Fuga
+                            cumque nostrum
+                            autem aspernatur hic pariatur.</p>
+                    </div>
+                </div>
+                <!--------card 4------->
+                <div class="justify-content-center col-lg-3 col-md-6 col-12">
+                    <div class="content_box_service d-flex justify-content-center p-2 align-items-center">
+                        <div class="icon_container justify-content-center align-items-center text-white">
+                            <i class="fa-solid fa-pen-nib" id="icon_service"></i>
+                        </div>
+                        <h4 class="heading_content_service">Creative Design</h4>
+                        <p class="para_content_service text-center">Lorem ipsum dolor sit amet adipisicing elit. Fuga
+                            cumque nostrum
+                            autem aspernatur hic pariatur.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
