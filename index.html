@@ -297,8 +297,92 @@
             line-height: 24px;
             color: #353535;
         }
-        .a_margin{
+
+        .a_margin {
             margin-top: 73px !important;
+        }
+
+        .our_client {
+            height: 190px;
+            width: 100%;
+            background-image: linear-gradient(#4141c9b0, #3636eac2), url(img/clients.jpg);
+            margin: 100px 0px;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container_client_content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 190px;
+        }
+
+        .content_client {
+            flex-direction: column;
+        }
+
+        .heading_data {
+            font-weight: 700;
+            font-size: 49px;
+        }
+
+        .para_data {
+            font-weight: 500;
+            font-size: 14px;
+            color: #ebebf8;
+        }
+
+        .projects {
+            width: 100%;
+            height: auto;
+            margin-top: 90px;
+        }
+
+        .heading_title_projects {
+            font-size: 42px;
+            font-weight: 800;
+            margin: 20px 0px 30px 0px;
+        }
+
+        .title_span_projects {
+            width: 210px;
+            background-color: rgb(151, 170, 237);
+            color: black;
+            text-align: center;
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .items_navbar_projects {
+            margin: 14px 4px;
+        }
+
+        .projects_navbar {
+            color: rgba(0, 0, 0, 0617);
+            text-decoration: none;
+            padding: 9px 5px;
+            border: 1px solid rgba(0, 0, 0, 0.42);
+            font-size: 15px;
+            font-weight: 500;
+            border-radius: 3px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .projects_navbar:hover {
+            background-color: rgb(22, 89, 189);
+            color: white;
+            border: none;
+        }
+
+        .items_navbar_projects .active {
+            background-color: #1659bd;
+            color: white;
+            border: none;
         }
 
         .a_tbdr {
@@ -483,7 +567,7 @@
                 <div class="row">
                     <div class="col-lg-6 mt-5">
                         <div class="content_home_section">
-                            <button class="title_span">WELCOME TO OUR SITE</button>
+                            <span class="title_span">WELCOME TO OUR SITE</span>
                             <h2 class="heading_homesection"><span class="heading_span">We Are Digital</span><br>
                                 Agency With Digital
                                 Solutions
@@ -625,6 +709,48 @@
                             autem aspernatur hic pariatur.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <!--------------client section------------>
+    <div class="our_client">
+        <div class="container">
+            <div class="container_client_content align-items-center">
+                <div class="content_client d-flex">
+                    <h3 class="heading_data text-center text-white">10,800</h3>
+                    <p class="para_data text-center">SATISFIED CUSTOMERS</p>
+                </div>
+                <div class="content_client d-flex">
+                    <h3 class="heading_data text-center text-white">19</h3>
+                    <p class="para_data text-center">YEAR OF EXPERIENCED</p>
+                </div>
+                <div class="content_client d-flex">
+                    <h3 class="heading_data text-center text-white">1,080</h3>
+                    <p class="para_data text-center">HAPPY CUSTOMER</p>
+                </div>
+                <div class="content_client d-flex">
+                    <h3 class="heading_data text-center text-white">900</h3>
+                    <p class="para_data text-center">PROJECT COMPLETED</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------project section---------------->
+    <section class="projects">
+        <div class="container">
+            <div class="title_span_projects">WELCOME TO PROJECT SECTION</div>
+            <h3 class="heading_title_projects">CHECK OUR PROJECTS :</h3>
+            <div class="nav_link_container d-flex justify-content-center align-items-center">
+                <ul class="d-flex flex-wrap mt-2">
+                    <li class="items_navbar_projects"><a href="#" class="projects_navbar">All</a></li>
+                    <li class="items_navbar_projects"><a href="#" class="projects_navbar active">WEB DEVOLOPMENT</a></li>
+                    <li class="items_navbar_projects"><a href="#" class="projects_navbar">UI/UX DESIGN</a></li>
+                    <li class="items_navbar_projects"><a href="#" class="projects_navbar">BRANDING</a></li>
+                    <li class="items_navbar_projects"><a href="#" class="projects_navbar">GRAPHIC DESIGN</a></li>
+                    <li class="items_navbar_projects"><a href="#" class="projects_navbar">WEB DESIGN</a></li>
+                    <li class="items_navbar_projects"><a href="#" class="projects_navbar">MARKETING</a></li>
+
+                </ul>
             </div>
         </div>
     </section>
