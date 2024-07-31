@@ -385,6 +385,64 @@
             border: none;
         }
 
+        .content_project_container_1 {
+            width: 100%;
+            height: 100%;
+            margin: 20px 0px;
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 190px 440px 200px;
+            grid-gap: 20px;
+        }
+
+        .content_project_container_2 {
+            width: 100%;
+            height: 100%;
+            margin: 20px 0px;
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 1fr;
+            grid-gap: 20px;
+        }
+
+        .content_project_container_3 {
+            width: 100%;
+            height: 100%;
+            margin: 20px 0px;
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 160px 300px 200px 160px;
+            grid-gap: 20px;
+        }
+
+        .box_container {
+            background-position: center;
+            background-size: cover;
+        }
+
+        .box_1 {
+            background-image: url(img/project1.jpg);
+        }
+
+        .box_2 {
+            background-image: url(img/project1.jpg);
+        }
+
+        .box_3 {
+            background-image: url(img/project6.jpg);
+        }
+
+        .box_4 {
+            background-image: url(img/project2.jpg);
+        }
+
+        .box_5 {
+            background-image: url(img/project4.jpg);
+        }
+
         .a_tbdr {
             border: black dashed 1px;
         }
@@ -743,7 +801,8 @@
             <div class="nav_link_container d-flex justify-content-center align-items-center">
                 <ul class="d-flex flex-wrap mt-2">
                     <li class="items_navbar_projects"><a href="#" class="projects_navbar">All</a></li>
-                    <li class="items_navbar_projects"><a href="#" class="projects_navbar active">WEB DEVOLOPMENT</a></li>
+                    <li class="items_navbar_projects"><a href="#" class="projects_navbar active">WEB DEVOLOPMENT</a>
+                    </li>
                     <li class="items_navbar_projects"><a href="#" class="projects_navbar">UI/UX DESIGN</a></li>
                     <li class="items_navbar_projects"><a href="#" class="projects_navbar">BRANDING</a></li>
                     <li class="items_navbar_projects"><a href="#" class="projects_navbar">GRAPHIC DESIGN</a></li>
@@ -754,9 +813,23 @@
             <div class="row mt-5">
                 <div class="col-lg-4 col-6">
                     <div class="content_project_container_1">
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
+                        <div class="box_container box_1"></div>
+                        <div class="box_container box_2"></div>
+                        <div class="box_container box_3"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="content_project_container_2">
+                        <div class="box_container box_4"></div>
+                        <div class="box_container box_5"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="content_project_container_3">
+                        <div class="box_container box_6"></div>
+                        <div class="box_container box_7"></div>
+                        <div class="box_container box_8"></div>
+                        <div class="box_container box_9"></div>
                     </div>
                 </div>
             </div>
