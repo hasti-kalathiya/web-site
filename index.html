@@ -143,8 +143,6 @@
 
         }
 
-
-
         .baloo-2 {
             font-family: "Baloo 2", sans-serif;
             font-optical-sizing: auto;
@@ -389,7 +387,6 @@
             width: 100%;
             height: 100%;
             margin: 20px 0px;
-            border: 1px solid red;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 190px 440px 200px;
@@ -400,7 +397,6 @@
             width: 100%;
             height: 100%;
             margin: 20px 0px;
-            border: 1px solid red;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 200px 1fr;
@@ -411,7 +407,6 @@
             width: 100%;
             height: 100%;
             margin: 20px 0px;
-            border: 1px solid red;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 160px 300px 200px 160px;
@@ -428,23 +423,97 @@
         }
 
         .box_2 {
-            background-image: url(img/project1.jpg);
-        }
-
-        .box_3 {
-            background-image: url(img/project6.jpg);
-        }
-
-        .box_4 {
             background-image: url(img/project2.jpg);
         }
 
-        .box_5 {
+        .box_3 {
+            background-image: url(img/project3.jpg);
+        }
+
+        .box_4 {
             background-image: url(img/project4.jpg);
         }
 
+        .box_5 {
+            background-image: url(img/project5.jpg);
+        }
+
+        .box_6 {
+            background-image: url(img/project6.jpg);
+
+        }
+
+        .box_7 {
+            background-image: url(img/project7.jpg);
+
+        }
+
+        .box_8 {
+            background-image: url(img/project8.jpg);
+
+        }
+
+        .box_9 {
+            background-image: url(img/project9.jpg);
+
+        }
+
+        .our_team {
+            width: 100%;
+            height: 80vh;
+            margin: 50px 0px;
+            flex-direction: column;
+        }
+
+        .title_span_team {
+            width: 87px;
+            background-color: rgb(151, 170, 237);
+            color: black;
+            text-align: center;
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .heading_title_team {
+            font-size: 42px;
+            font-weight: 800;
+            margin: 15px 0px 30px 0px;
+        }
+
+        .container_ourteam{
+            margin-top: 150px;
+        }
+
+        .content_team_details{
+            width: 100%;
+            height: 350px;
+            background-color: #8856e4;
+            position: relative;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+        .img_container{
+            width: 210px;
+            height: 210px;
+            background-color: white;
+            position: absolute;
+            border-radius: 50%;
+            left: 10%;
+            top: -110px;
+            background-position: top;
+            background-size: cover;
+            border: 8px solid white;
+        }
+
+        .img_1_team{
+            background-image: url(img/team1.jpg);
+        }
+
         .a_tbdr {
-            border: black dashed 1px;
+            border: red 1px dashed;
         }
 
         @media (max-width:1330px) {
@@ -830,6 +899,26 @@
                         <div class="box_container box_7"></div>
                         <div class="box_container box_8"></div>
                         <div class="box_container box_9"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------team section------------------------>
+    <section class="our_team a_tbdr d-flex justify-contenty-center align-items-center">
+        <div class="container">
+            <div class="title_span_team">OUR TEAM</div>
+            <h3 class="heading_title_team">Check Our Team</h3>
+            <div class="container_ourteam">
+                <div class="row">
+                    <div class="col-lg-3 mt-2 d-flex">
+                        <div class="content_team_details">
+                            <div class="img_container img_1_team">
+                                <div class="content_team">
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
