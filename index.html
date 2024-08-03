@@ -461,7 +461,7 @@
         .our_team {
             width: 100%;
             height: 80vh;
-            margin: 50px 0px;
+            margin: 100px 0px;
             flex-direction: column;
         }
 
@@ -483,11 +483,11 @@
             margin: 15px 0px 30px 0px;
         }
 
-        .container_ourteam{
+        .container_ourteam {
             margin-top: 150px;
         }
 
-        .content_team_details{
+        .content_team_details {
             width: 100%;
             height: 350px;
             background-color: #8856e4;
@@ -495,7 +495,12 @@
             cursor: pointer;
             transition: 0.3s ease-in-out;
         }
-        .img_container{
+
+        .content_team_details:hover {
+            background-color: #3e2d5e !important;
+        }
+
+        .img_container {
             width: 210px;
             height: 210px;
             background-color: white;
@@ -508,12 +513,115 @@
             border: 8px solid white;
         }
 
-        .img_1_team{
+        .img_1_team {
             background-image: url(img/team1.jpg);
         }
 
-        .a_tbdr {
-            border: red 1px dashed;
+        .img_2_team {
+            background-image: url(img/team2.jpg);
+        }
+
+        .img_3_team {
+            background-image: url(img/team3.jpg);
+        }
+
+        .img_4_team {
+            background-image: url(img/team4.jpg);
+        }
+
+        .content_team {
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            position: absolute;
+            top: 225px;
+        }
+
+        .heading_name {
+            font-size: 23px;
+            font-weight: 800;
+        }
+
+        .profession {
+            font-size: 13px;
+            color: #f0e7fc;
+            font-weight: 400;
+        }
+
+        .icon_profile {
+            width: 38px;
+            height: 38px;
+            background-color: #1f5daf;
+            margin: 0px 3px;
+            border-radius: 50%;
+            display: block;
+        }
+
+        .para_details_team {
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+
+        .blogs {
+            width: 100%;
+            height: 100vh;
+            margin: 170px 0px;
+        }
+
+        .blog_container_content {
+            width: 100%;
+            height: 540px;
+            background-color: #f3f1f1;
+            position: relative;
+        }
+
+        .img_container_blog {
+            width: 100%;
+            height: 290px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .img_1_blog {
+            background-image: url(img/blog1.jpg);
+        }
+
+        .text_container {
+            width: 83%;
+            background-color: white;
+            padding: 10px 12px;
+            justify-content: space-between;
+            justify-content: center;
+            display: flex;
+            position: absolute;
+            top: 270px;
+            left: 30px;
+        }
+
+        .text_container span {
+            color: #908888;
+            font-size: 13px;
+            font-weight: 500;
+            padding: 1px 7px;
+        }
+
+        .content_blog {
+            padding: 12px 20px;
+        }
+        .heading_post_blog{
+            font-size: 18px;
+            font-weight: 900;
+            color: #3b3b3b;
+            margin-top: 24px;
+            line-height: 25px;
+            font-family: "poppins" ,sans-serif;
+        }
+        .para_post_blog{
+            font-size: 15px;
+            font-weight: 500;
+            margin: 18px 0px 24px 0px;
+            color: #646363;
         }
 
         @media (max-width:1330px) {
@@ -905,7 +1013,7 @@
         </div>
     </section>
     <!--------------------team section------------------------>
-    <section class="our_team a_tbdr d-flex justify-contenty-center align-items-center">
+    <section class="our_team d-flex justify-content-center align-items-center">
         <div class="container">
             <div class="title_span_team">OUR TEAM</div>
             <h3 class="heading_title_team">Check Our Team</h3>
@@ -914,9 +1022,150 @@
                     <div class="col-lg-3 mt-2 d-flex">
                         <div class="content_team_details">
                             <div class="img_container img_1_team">
-                                <div class="content_team">
-
+                                <div class="content_team d-flex justify-content-center align-items-center">
+                                    <h4 class="heading_name text-white">ROGER SCOTT</h4>
+                                    <p class="profession">MARKETING MANAGER</p>
+                                    <div class="icon_team d-flex">
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </div>
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </div>
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-google-play"></i>
+                                        </div>
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                    <p class="para_details_team text-white text-center">Lorem, ipsum dolor sit amet
+                                        consectetur adipisicing elit. Nisi nemo iure sed?</p>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-2 d-flex">
+                        <div class="content_team_details">
+                            <div class="img_container img_2_team">
+                                <div class="content_team d-flex justify-content-center align-items-center">
+                                    <h4 class="heading_name text-white">WILLIAM DOE</h4>
+                                    <p class="profession">CTO MANAGER</p>
+                                    <div class="icon_team d-flex">
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </div>
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </div>
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-google-play"></i>
+                                        </div>
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                    <p class="para_details_team text-white text-center">Lorem, ipsum dolor sit amet
+                                        consectetur adipisicing elit. Nisi nemo iure sed?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-2 d-flex">
+                        <div class="content_team_details">
+                            <div class="img_container img_3_team">
+                                <div class="content_team d-flex justify-content-center align-items-center">
+                                    <h4 class="heading_name text-white">WILLIAM WHITE</h4>
+                                    <p class="profession">CHIEF EXECUTIVE OFFICER</p>
+                                    <div class="icon_team d-flex">
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </div>
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </div>
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-google-play"></i>
+                                        </div>
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                    <p class="para_details_team text-white text-center">Lorem, ipsum dolor sit amet
+                                        consectetur adipisicing elit. Nisi nemo iure sed?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-2 d-flex">
+                        <div class="content_team_details">
+                            <div class="img_container img_4_team">
+                                <div class="content_team d-flex justify-content-center align-items-center">
+                                    <h4 class="heading_name text-white">JEFFREY ROCKENSON</h4>
+                                    <p class="profession">PRESIDENT & CEO</p>
+                                    <div class="icon_team d-flex">
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </div>
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </div>
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-google-play"></i>
+                                        </div>
+                                        <div
+                                            class="icon_profile text-white d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                    <p class="para_details_team text-white text-center">Lorem, ipsum dolor sit amet
+                                        consectetur adipisicing elit. Nisi nemo iure sed?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------blog section-------------------->
+
+    <section class="blogs">
+        <div class="container">
+            <div class="title_heading_service align-items-center">
+                <div class="title_span">RECENT POSTS / BLOGS</div>
+                <h3 class="heading_service">RECENT FROM BLOGS</h3>
+            </div>
+            <div class="row mt-5">
+                <div class="col-4">
+                    <div class="blog_container_content">
+                        <div class="img_container_blog img_1_blog">
+
+                            <p class="text_container align-items-center judtify-content-center">
+                                <span><i class="fa fa-user me-1"></i>Admin</span>
+                                <span><i class="fa fa-calendar me-1"></i>JAN. 18, 2021</span>
+                                <span><i class="fa fa-comment me-1"></i>8 Comments</span>
+                            </p>
+                            <div class="content_blog">
+                                <h3 class="heading_post_blog">Tips & Tricks For Building A New Web Page</h3>
+                                <p class="para_post_blog">Lorem ipsum dolor sit amet consectetu adipisicing consectetur
+                                    sit amet consectetu adipisicing.</p>
+                                    <a href="#" class="btn_post_blog">Read More</a>
                             </div>
                         </div>
                     </div>
